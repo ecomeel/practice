@@ -67,6 +67,9 @@ header {
     box-sizing: border-box;
     position: relative;
 }
+.block {
+    text-indent: 3%;
+}
 
 .modal {
     height: 100px;
@@ -79,7 +82,11 @@ header {
     left: 50%;
     top: 50%;
     z-index: 1;
-    overflow: hidden;
+    overflow: auto;
+    text-indent: 2%;
+}
+.modal p::first-letter {
+    color: black;
 }
 
 .overlay {
@@ -90,4 +97,38 @@ header {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+.fonts {
+    font-family: 'Dosis', sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+    color: darkblue;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+    line-height: 70px;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 1px 2px 5px red, -1px -2px 5px green
+}
+/* borders */
+.example, .shadow {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin: 20px;;
+}
+
+.example {
+    border: 10px double red;
+    outline: 5px solid green;
+}
+
+.shadow {
+    border-radius: 50% 30%;
+}
+
+.exampleLi li {
+    color: black;
+    margin-left: 10px;;
 }
