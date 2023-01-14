@@ -6,163 +6,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Useful attributes -->
-    <p contenteditable="true" dir="rtl">Hello</p>
-    <in put type="text" spellcheck="true"> 
-    <h1 hidden>Hello world</h1>
-    <input type="text" placeholder="name" tabindex="1">
-    <input type="text" placeholder="password" tabindex="3">
-    <input type="text" placeholder="submit" tabindex="2">
-    <!-- Useful tags -->
-    <abbr title="Hyper Text Markup Language">HTML</abbr>
-    <hr>
-    <input list=«list» autofocus>
-    <datalist id=«list» >
-        <option value=«Sasha»>Sanchoc</option>
-        <option value=«Sergey»>Serj</option>
-        <option value=«Anastasiya»>Nastya</option>
-    </datalist>
-    <br>
-    <meter value="30" max="100" low="10" high="60"></meter>
-    <progress value="90" max="100"></progress>
-    <br>
-    <noscript>Please switch on scripts in your browser!</noscript>
-    <!-- Fomrs -->
-    <form action="fromHandler" name="simpleForm" autocomplete="on">
-        <fieldset>
-            <legend>Simple From Legend</legend>
-            <label for="username">Username</label>
-            <input type="text" id="username">
-            <br>
-            <label for="password">UserPass</label>
-            <input type="password" id="password">
-            <br>
-            <select name="city" id="city"> 
-                <option value="ptz">Petrozavods</option>
-                <option value="spb">Saints-Petersburg</option>
-                <option value="msk">Moscow</option>
-            </select>
-            <!-- multiple -->
-            <br>
-            <textarea name="something" id="something" cols="30" rows="10" placeholder="You can write something here" maxlength="20" required></textarea>
-            <!-- autofocus readonly required(обязательно для заполнения)-->
-            <br>
-            <button type="submit">submit</button>
-        </fieldset>
-    </form>
-    <!-- Input types -->
-    <hr>    
-    <input type="text">
-    <input type="number" min="1" max="10" step="3">
-    <input type="password">
-    <br>
-    <input type="range">
-    <input type="color">
-    <br>
-    <input type="date">
-    <input type="datetime-local">
-    <input type="month">
-    <input type="time">
-    <input type="week">
-    <br>
-    <input type="submit" value="Send">
-    <input type="reset" value="clear">
-    <br>
-    <input type="email">
-    <input type="url">
-    <input type="tel">
-    <input type="search">
-    <br>
-    <input type="hidden" value="webDev"> 
-    <!-- Пользователь не видит данное поле -->
-    <br>
-    <input type="file" multiple>
-    <br>
-    <label>
-        <input type="radio" name="choice" value="option1" checked>
-        One
-    </label>
-    <label>
-        <input type="radio" name="choice" value="option2">
-        Two
-    </label>
-    <br>
-    <label>
-        <input type="checkbox" value="option1">
-        One
-    </label>
-    <label>
-        <input type="checkbox" value="option2" checked>
-        Two
-    </label>
-    <hr>
-    <!-- Tables -->
-    <table>
-        <caption>Boys list</caption>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-                <th>some    </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sasha</td><td>22</td><td>spd</td><td rowspan="3">hello</td>
-            </tr>
-            <tr>
-                <td>Sergey</td><td>22</td><td>ptz</td>
-            </tr>
-            <tr>
-                <td>Ilya</td><td>21</td><td>Novgorod</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">3</td>
-            </tr>
-        </tfoot>
-    </table>
-    <a href="mailto:ecomeel@gmail.com">myMail</a>
-    <hr>
-    <button type="button" disabled >Button</button>
-    <input type="text">
-    <a href="#bottom">scroll</a>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p><p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p><p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p><p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro earum ab odit quisquam reiciendis saepe exercitationem commodi totam at alias. Maxime vel voluptates minima accusantium iusto tempora nobis ullam ut.
-    </p>
-    <p id="bottom">Bottom</p>
+    <header>
+        <h1 class="headerCaption">Site header</h1>
+        <p class="frst">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, qui! Placeat dolorem </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, qui! Placeat dolorem </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, qui! Placeat dolorem </p>
+    </header>
+    <main>
+        <a href="https://www.google.com">Google</a>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+        </ul>
+        <input list=«list»>
+        <datalist id=«list» >
+            <option value=«Sasha»>Sanchoc</option>
+            <option value=«Sergey»>Serj</option>
+            <option value=«Anastasiya»>Nastya</option>
+        </datalist>
+        <br>
+        <progress value="90" max="100"></progress>
+        <!-- Fomrs -->
+        <form action="fromHandler" name="simpleForm" autocomplete="on">
+            <fieldset>
+                <legend>Simple From Legend</legend>
+                <label for="username">Username</label>
+                <input type="text" id="username">
+                <br>
+                <label for="password">UserPass</label>
+                <input type="password" id="password">
+                <br>
+                <input list=«list»>
+                <datalist id=«list» >
+                    <option value=«Sasha»>Sanchoc</option>
+                    <option value=«Sergey»>Serj</option>
+                    <option value=«Anastasiya»>Nastya</option>
+                </datalist>
+                <!-- multiple -->
+                <br>
+                <textarea name="something" id="something" cols="30" rows="10" placeholder="You can write something here" maxlength="20" required></textarea>
+                <!-- autofocus readonly required(обязательно для заполнения)-->
+                <br>
+                <button type="submit">submit</button>
+            </fieldset>
+        </form>
+        <!-- Tables -->
+        <table>
+            <caption>Boys list</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>some    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sasha</td><td>22</td><td>spd</td><td rowspan="3">hello</td>
+                </tr>
+                <tr>
+                    <td>Sergey</td><td>22</td><td>ptz</td>
+                </tr>
+                <tr>
+                    <td>Ilya</td><td>21</td><td>Novgorod</td>
+                </tr>
+                <tr>
+                    <td>Sonya</td><td>19</td><td>Moscow</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">3</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <button type="button" >Button</button>
+    </main>
     <script src="code.js"></script>
 </body>
 </html>
