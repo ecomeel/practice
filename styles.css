@@ -135,3 +135,38 @@ header {
     list-style-type: decimal;
     list-style-position: inside;
 }
+
+.wrapper {
+    height: 1000px;
+    width: 1000px;
+    background-color: bisque;
+    background-image: url(https://images.wallpaperscraft.ru/image/single/dorogi_neon_ogni_661814_1366x768.jpg);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.gradient_line {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background: repeating-linear-gradient(45deg, yellow 25px, black 25px, black 50px, yellow 50px, yellow 75px, black 75px);
+}
+
+.gradient_rad {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background: repeating-radial-gradient(circle, orange 10px, black 25px);
+}
+
+.hue { 
+    height: 400px;
+    width: 400px;
+    background-image: url(https://images.wallpaperscraft.ru/image/single/dorogi_neon_ogni_661814_1366x768.jpg);
+}
+
+.hue:hover {
+    filter: opacity(40%);
+}
