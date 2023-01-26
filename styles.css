@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 3px;
     padding: 0;
     font-size: 18px;
@@ -113,7 +113,7 @@ header {
     text-shadow: 1px 2px 5px red, -1px -2px 5px green
 }
 /* borders */
-.example, .shadow {
+/* .example, .shadow {
     height: 100px;
     width: 100px;
     background-color: gray;
@@ -254,5 +254,60 @@ header {
     border-radius: 10px;
     background: linear-gradient(45deg, #deeb94, #82fbe5);
 }
+ */
 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
 
+ .flex-container {
+    border: 10px solid rgb(136, 95, 207)
+ }
+
+ .flex-item {
+    padding: 10px;
+    font: 900 60px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, .2);
+ }
+
+ .item1 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .item2 {
+    background: linear-gradient(45deg, rgb(121, 226, 222), rgb(100, 137, 200));
+ }
+ .item3 {
+    background: linear-gradient(45deg, rgb(192, 229, 106), rgb(100, 200, 142));
+ }
+ .item4 {
+    background: linear-gradient(45deg, rgb(106, 131, 229), rgb(117, 100, 200));
+ }
+ .item5 {
+    background: linear-gradient(45deg, rgb(229, 106, 227), rgb(200, 100, 125));
+ }
+ .item6 {
+    background: linear-gradient(45deg, rgb(202, 229, 106), rgb(208, 196, 32));
+ }
+ .item7 {
+    background: linear-gradient(45deg, rgb(175, 62, 81), rgb(165, 35, 35));
+ }
+ .item8 {
+    background: linear-gradient(45deg, rgb(106, 223, 229), rgb(14, 89, 165));
+ }
+
+ .flex-container {
+    background: linear-gradient(45deg, rgb(248, 247, 247), rgb(215, 202, 229));
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .flex-item {
+    width: 100px;
+ }
