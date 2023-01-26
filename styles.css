@@ -256,13 +256,13 @@ header {
 }
  */
 
- * {
+ /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+ } */
 
- .flex-item {
+ /* .flex-item {
     padding: 10px;
     font: 900 60px "Roboto", sans-serif;
     color: #fff;
@@ -321,4 +321,19 @@ header {
 
  section {
     flex: 3;
+ } */
+
+ .grid {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
  }
+
+ .grid-item1 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+.grid-item2 {
+    background: linear-gradient(45deg, rgb(121, 226, 222), rgb(100, 137, 200));
+}
+.grid-item3 {
+    background: linear-gradient(45deg, rgb(192, 229, 106), rgb(100, 200, 142));
+}
