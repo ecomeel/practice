@@ -325,15 +325,59 @@ header {
 
  .grid {
     display: grid;
-    grid-template-columns: 100px 1fr 200px;
+    margin: 0 auto;
+    border: 2px dashed rgba(53, 63, 59, 0.5);
+    width: 95%;
+    grid-template-columns: repeat(6, [col] 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, [row] 1fr);
+    height: 95vh;
  }
 
- .grid-item1 {
+.grid-item {
+    text-align: center;
+    padding: 10px;
+    min-height: 110px;
+}
+
+.grid-item1 {
     background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+    grid-column: span 2;
  }
 .grid-item2 {
     background: linear-gradient(45deg, rgb(121, 226, 222), rgb(100, 137, 200));
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .grid-item3 {
     background: linear-gradient(45deg, rgb(192, 229, 106), rgb(100, 200, 142));
+    grid-row: 2 span;
 }
+.grid-item4 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .grid-item5 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .grid-item6 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .grid-item7 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .grid-item8 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ .grid-item9 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+    grid-column: span 2;
+ }
+ .grid-item10 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+    grid-column: span 2;
+
+ }
+ .grid-item11 {
+    background: linear-gradient(45deg, rgb(229, 106, 106), rgb(200, 131, 100));
+ }
+ 
