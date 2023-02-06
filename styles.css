@@ -238,7 +238,7 @@ header {
     color: red;
     opacity: .5;
 }
-
+*/
 ::-webkit-scrollbar {
     width: 25px;
     background-color: #101124;
@@ -254,12 +254,13 @@ header {
     border-radius: 10px;
     background: linear-gradient(45deg, #deeb94, #82fbe5);
 }
- */
+ 
 
  .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 110vh;
  }
 
 .element-1 {
