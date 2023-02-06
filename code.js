@@ -40,79 +40,79 @@ function init() {
     // var darkRoast = new Coffee("Dark Roast", 16);
     // console.log(darkRoast.toString());
 
-    function Car(params) {
-        this.make = params.make;
-        this.model = params.model; 
-        this.year = params.year;
-        this.color = params.color;
-        this.passengers = params.passengers;
-        this.convertible = params.convertible;
-        this.mileage = params.mileage;
-        this.started = false;
-        this.start = function() {
-            this.started = true;
-        }
-        this.stop = function() {
-            this.started = false;
-        }
-        this.drive = function() {
-            if (this.started) alert('Zoom Zoom!')
-            else alert('Start the engine the first');
-        }
-    }
+    // function Car(params) {
+    //     this.make = params.make;
+    //     this.model = params.model; 
+    //     this.year = params.year;
+    //     this.color = params.color;
+    //     this.passengers = params.passengers;
+    //     this.convertible = params.convertible;
+    //     this.mileage = params.mileage;
+    //     this.started = false;
+    //     this.start = function() {
+    //         this.started = true;
+    //     }
+    //     this.stop = function() {
+    //         this.started = false;
+    //     }
+    //     this.drive = function() {
+    //         if (this.started) alert('Zoom Zoom!')
+    //         else alert('Start the engine the first');
+    //     }
+    // }
 
-    let chevyParams = {
-        make: 'Chevy',
-        model: 'Bel Air',
-        year: 1957,
-        color: 'red',
-        passengers: 2,
-        convertible: false,
-        mileage: 1021
-    };
-    let chevy = new Car(chevyParams);
-    let cadiParams = {
-        make: 'GM',
-        model: 'Cadilac',
-        year: 1955,
-        color: 'tan',
-        passengers: 5,
-        convertible: false,
-        mileage: 12892
-    };
-    let cadi = new Car(cadiParams);
-    let taxiParams = {
-        make: 'Webville Motors',
-        model: 'Taxi',
-        year: 1955,
-        color: 'yellow',
-        passengers: 4,
-        convertible: false,
-        mileage: 281341
-    };
-    let taxi = new Car(taxiParams);
-    let fiatParams = {
-        make: 'Fiat',
-        model: '500',
-        year: 1957,
-        color: 'Medium blue',
-        passengers: 2,
-        convertible: false,
-        mileage: 88000
-    };
-    let fiat = new Car(fiatParams);
-    let testCatParams = {
-        make: 'Webville Motors',
-        model: 'Test Car',
-        year: 2014,
-        color: 'marine',
-        passengers: 2,
-        convertible: true,
-        mileage: 21
-    };
-    let testCar = new Car(testCatParams);
+    // let chevyParams = {
+    //     make: 'Chevy',
+    //     model: 'Bel Air',
+    //     year: 1957,
+    //     color: 'red',
+    //     passengers: 2,
+    //     convertible: false,
+    //     mileage: 1021
+    // };
+    // let chevy = new Car(chevyParams);
+    // let cadiParams = {
+    //     make: 'GM',
+    //     model: 'Cadilac',
+    //     year: 1955,
+    //     color: 'tan',
+    //     passengers: 5,
+    //     convertible: false,
+    //     mileage: 12892
+    // };
+    // let cadi = new Car(cadiParams);
+    // let taxiParams = {
+    //     make: 'Webville Motors',
+    //     model: 'Taxi',
+    //     year: 1955,
+    //     color: 'yellow',
+    //     passengers: 4,
+    //     convertible: false,
+    //     mileage: 281341
+    // };
+    // let taxi = new Car(taxiParams);
+    // let fiatParams = {
+    //     make: 'Fiat',
+    //     model: '500',
+    //     year: 1957,
+    //     color: 'Medium blue',
+    //     passengers: 2,
+    //     convertible: false,
+    //     mileage: 88000
+    // };
+    // let fiat = new Car(fiatParams);
+    // let testCatParams = {
+    //     make: 'Webville Motors',
+    //     model: 'Test Car',
+    //     year: 2014,
+    //     color: 'marine',
+    //     passengers: 2,
+    //     convertible: true,
+    //     mileage: 21
+    // };
+    // let testCar = new Car(testCatParams);
 
-    let cars = [chevy, cadi, taxi, fiat, testCar];
+    // let cars = [chevy, cadi, taxi, fiat, testCar];
 
     // for(let i=0; i<cars.length; i++) {
     //     let amountDrive = Math.floor(Math.random() * 5) + 1
@@ -123,6 +123,23 @@ function init() {
     //     cars[i].stop()
     //     alert('car is stopped!')
     // }
+    
+
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    function myFun(menu) {
+        for (el of menu) {
+            console.log(hello);
+        }
+    }
+
+    myFun(menu);
 }
+
+
 
 window.onload = init;
