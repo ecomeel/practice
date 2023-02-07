@@ -8,6 +8,7 @@ function init() {
         this.weight = weight;
     }
 
+    Dog.prototype.species = 'Canie'
     Dog.prototype.bark = function() {
         this.weight > 25 ? alert(this.name + ' says Woof!') : alert(this.name + 'says Yip!');
     }
