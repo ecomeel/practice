@@ -1,17 +1,37 @@
 function init() {
 
-    // function Dog(name, breed, weight) {
-    //     this.name = name;
-    //     this.breed = breed;
-    //     this.weight = weight;
-    //     this.bark = function() {
-    //         this.weight > 25 ? alert(this.name + ' says Woof!') : alert(this.name + 'says Yip!');
-    //     }
-    // }
 
-    // var fido = new Dog("Fido", "Mixed", 38);
-    // var fluffy = new Dog("Fluffy", "Poodle", 30);
-    // var spot = new Dog("Spot", "Chihuahua", 10);
+
+    function Dog(name, breed, weight) {
+        this.name = name;
+        this.breed = breed;
+        this.weight = weight;
+    }
+
+    Dog.prototype.bark = function() {
+        this.weight > 25 ? alert(this.name + ' says Woof!') : alert(this.name + 'says Yip!');
+    }
+    Dog.prototype.run = function() {
+        console.log('Run!')
+    }
+    Dog.prototype.wag = function() {
+        console.log('Wag!')
+    }
+
+    var fido = new Dog("Fido", "Mixed", 38);
+    var fluffy = new Dog("Fluffy", "Poodle", 30);
+    var spot = new Dog("Spot", "Chihuahua", 10);
+    spot.bark = function() {
+        console.log(this.name + ' says WOOF!')
+    }
+    spot.bark()
+
+    var bernady = new Dog('Bernady', 'Basset Hound', 55);
+    Dog.prototype.sit = function() {
+        console.log(this.name + ' now is sitting!')
+    }
+    bernady.sit()
+    fluffy.sit()
     // var dogs = [fido, fluffy, spot];
 
     // for (let i=0; i<dogs.length; i++) {
@@ -22,6 +42,9 @@ function init() {
 
     // console.log(typeof fido);
     // fido.bark()
+
+
+
 
     // function Coffee(roast, ounces) {
     //     this.roast = roast;
@@ -124,20 +147,6 @@ function init() {
     //     alert('car is stopped!')
     // }
     
-
-    let menu = {
-        width: 200,
-        height: 300,
-        title: "My menu"
-    };
-
-    function myFun(menu) {
-        for (el of menu) {
-            console.log(hello);
-        }
-    }
-
-    myFun(menu);
 }
 
 
