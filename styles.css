@@ -258,16 +258,4 @@ header {
 
  .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 110vh;
  }
-
-.element-1 {
-    flex: 1 0 100%; 
-    align-self: flex-start;
-    order: 1;
-}
-.element-2 {
-
-}

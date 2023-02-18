@@ -147,7 +147,7 @@ function init() {
     //     cars[i].stop()
     //     alert('car is stopped!')
     // }
-    
+    console.log(location.href)
 }
 
 
