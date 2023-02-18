@@ -10,3 +10,7 @@ body {
 li::marker {
     color: yellow
 }
+
+.red {
+    color: red
+}
