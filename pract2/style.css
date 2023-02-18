@@ -1,0 +1,12 @@
+body {
+    background-color: #212121;
+    color: white
+}
+
+.yellow {
+    color: yellow
+}
+
+li::marker {
+    color: yellow
+}
